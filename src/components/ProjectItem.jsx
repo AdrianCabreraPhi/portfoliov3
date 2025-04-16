@@ -22,7 +22,7 @@ function ProjectItem({ project }) {
       onMouseLeave={() => setIsHovered(false)}
       href={project.link}
       target="_blank"
-      className="flex flex-col   group w-[60vw] mx-auto md:w-auto md:mx-0 shadow-md relative transition-all duration-300 ease-in-out justify-between hover:shadow-amber-300 cursor-none hover:border-amber-300/20  rounded-md border border-dashed px-4 py-5 border-zinc-600"
+      className="flex flex-col   group w-[90vw] mx-auto md:w-auto md:mx-0 shadow-md relative transition-all duration-300 ease-in-out justify-between hover:shadow-amber-300 cursor-none hover:border-amber-300/20  rounded-md border border-dashed px-4 py-5 border-zinc-600"
     >
       <h1 className="text-xl font-bold tracking-tight text-gray-100">
         {project.name}
@@ -34,7 +34,7 @@ function ProjectItem({ project }) {
             return (
               <>
                 {technology.icon}
-                <span className="text-zinc-400 transition-all duration-300 ease-in-out group-hover:text-zinc-300">
+                <span key={technology.name} className="text-zinc-400  md:text-sm  text-xs  transition-all duration-300 ease-in-out group-hover:text-zinc-300">
                   {technology.name}
                 </span>
               </>
@@ -60,7 +60,7 @@ function ProjectItem({ project }) {
           }}
           animate={{ opacity: isHovered ? 1 : 0 }}
           transition={{ duration: 0.3 }}
-          className="w-[500px] rounded-md"
+          className="w-[500px] invisible rounded-md md:visible"
         />
       )}
     </a>

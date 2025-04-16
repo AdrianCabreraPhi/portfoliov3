@@ -7,8 +7,8 @@ function Projects() {
         Projects
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {ListProjects.map(function (project) {
-          return <ProjectItem project={project} />;
+        {ListProjects.map(function (project,idx) {
+          return <ProjectItem key={idx} project={project} />;
         })}
       </div>
     </div>

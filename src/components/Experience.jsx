@@ -12,7 +12,7 @@ function Experience(){
           * {ListExperience.map(function (experience) {
             return (
                 <div className="card-experience group rounded-md shadow-md transition-all duration-300 ease-in-out hover:shadow-zinc-700 justify-between border-zinc-600 flex flex-row">
-                <img src={experience.image} alt="" className="md:grayscale-100 transition-all group-hover:grayscale-0 duration-300 ease-in-out rounded-md" width={250} />
+                <img src={experience.image} alt="" className=" w-[130px] md:w-[250px] md:grayscale-100 transition-all group-hover:grayscale-0 duration-300 ease-in-out rounded-md"  />
                 <div className="flex flex-col mt-2 mr-2">
                   <span className="text-white">{experience.duration}</span>
                   <span className="text-zinc-500">{experience.name}</span>
