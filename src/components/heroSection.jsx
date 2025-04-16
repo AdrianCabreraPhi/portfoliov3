@@ -1,5 +1,6 @@
 import main_picture from "../assets/main_picture.png";
-import scientific_icon from "../assets/scientific_icon.webp"
+import scientific_icon from "../assets/scientific_icon.webp";
+import { motion, useMotionValue } from "framer-motion";
 function HeroSection() {
   return (
     <>
@@ -8,9 +9,27 @@ function HeroSection() {
           <h1 className="font-bold text-center md:text-left text-3xl md:text-5xl tracking-tight mb-2 text-white">
             Adrian Cabrera
           </h1>
-          <span className="text-zinc-400 text-center md:text-left leading-7 text-lg">
-            Building <a className="text-white cursor-pointer">Minimalist UI</a>{" "}
-            & <a className="text-white cursor-pointer">Scientific Tools <img src={scientific_icon} className="inline align-top" width={15} alt="scientific icon" /></a> 
+          <span className="text-zinc-400  text-center md:text-left leading-7 text-lg">
+            Building{" "}
+            <a className="text-white bg-gray-700 p-1 cursor-pointer">
+              Minimalist UI
+            </a>{" "}
+            &{" "}
+            <span className="text-white ">
+              Scientific Tools{" "}
+              <motion.img
+                animate={{ y: [0, -10, 0], rotate: [0, 20, -20, 0] }}
+                transition={{
+                  duration: 5,
+                  ease: "easeLinear",
+                  repeat: Infinity,
+                }}
+                src={scientific_icon}
+                className="inline align-top"
+                width={15}
+                alt="scientific icon"
+              />
+            </span>
           </span>
           <span className="text-zinc-500 text-center md:text-left   text-lg mt-4 text-balance leading-7">
             Software Engineer building web & mobile apps. Programming since
