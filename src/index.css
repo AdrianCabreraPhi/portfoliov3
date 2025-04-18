@@ -1,0 +1,15 @@
+.site-wrapper {
+    overflow-x: hidden;
+  }
+
+  *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img, video, iframe, embed {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
