@@ -1,6 +1,7 @@
 import main_picture from "../assets/main_picture.png";
 import scientific_icon from "../assets/scientific_icon.webp";
 import { motion, useMotionValue } from "framer-motion";
+
 function HeroSection() {
   return (
     <>
