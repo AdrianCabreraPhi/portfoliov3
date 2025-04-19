@@ -9,7 +9,7 @@ function App() {
     <>
       <div className=" bg-zinc-900 ">
         <Fade >
-          <div className="flex  flex-col justify-center gap-14  max-w-3xl mx-auto pb-16 pt-46">
+          <div className="flex  flex-col justify-center gap-14  max-w-3xl mx-auto pb-16 pt-10 md:pt-46">
           <Fade  delay={100}>
             <HeroSection />
             </Fade>
